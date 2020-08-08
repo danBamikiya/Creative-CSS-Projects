@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap");
+body {
+	margin: 0;
+	padding: 0;
+	background: url(bg.jpg);
+	background-color: black;
+	background-size: cover;
+	font-family: "Quicksand", "Orbitron", sans-serif;
+}
+
+.neon {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	margin: 0;
+	font-size: 6em;
+	color: #fff;
+	text-shadow: 0 0 20px #ff005b;
+}
+
+.neon::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	color: #ff005b;
+	-webkit-filter: blur(15px);
+	filter: blur(15px);
+}
+
+.neon::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fe3a80;
+	z-index: -2;
+	opacity: 0.5;
+	filter: blur(40px);
+}
+
+.neon-dark {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	margin: 0;
+	font-size: 6em;
+	color: #000;
+	text-shadow: 0 0 20px #ff005b;
+}
+
+.neon-dark::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	color: #ff005b;
+	-webkit-filter: blur(15px);
+	filter: blur(15px);
+}
+
+.neon-dark::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fe3a80;
+	z-index: -2;
+	opacity: 0.5;
+	filter: blur(40px);
+}
